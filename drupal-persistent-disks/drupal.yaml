@@ -30,7 +30,7 @@ spec:
               name: drupal
           volumeMounts:
             - name: drupal-persistent-storage
-              mountPath: /var/www/html
+              mountPath: /opt/drupal/web/sites/default/files
       volumes:
         - name: drupal-persistent-storage
           persistentVolumeClaim:
